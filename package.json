@@ -2,6 +2,7 @@
   "name": "hydra-test-issue-comment",
   "version": "1.0.0",
   "description": "Multi-workflow test repository for HYDRA E2E pipeline",
+  "license": "MIT",
   "scripts": {
     "test": "echo 'Running tests...' && exit 0"
   }
