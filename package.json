@@ -1,5 +1,5 @@
 {
-  "name": "hydra-e2e-target",
+  "name": "hydra-test-issue-comment",
   "version": "1.0.0",
   "description": "Multi-workflow test repository for HYDRA E2E pipeline",
   "scripts": {
