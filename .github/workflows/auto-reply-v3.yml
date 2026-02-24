@@ -1,0 +1,9 @@
+name: Auto Reply v3
+on:
+  issue_comment:
+    types: [created]
+jobs:
+  auto-reply:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "comment received"
