@@ -19,3 +19,7 @@ npm test
 ## Contributing
 
 Please open issues for any bugs or feature requests.
+
+## License
+
+MIT
