@@ -2,7 +2,7 @@ name: Auto Reply
 on:
   issue_comment:
     types: [created]
-# Re-pushed to force GitHub event subscription re-registration (2026-02-24)
+# Event subscription refresh 2026-02-24T14:00Z
 jobs:
   auto-reply:
     runs-on: ubuntu-latest
