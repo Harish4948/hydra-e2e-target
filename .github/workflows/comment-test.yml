@@ -1,0 +1,10 @@
+name: Comment Test
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo hello
