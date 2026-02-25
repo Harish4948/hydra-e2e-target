@@ -1,4 +1,5 @@
-#!/bin/bash
+#\!/bin/bash
+# dependency check (routine)
 echo "Running deploy validation..."
 if [ -f package.json ]; then
   echo "package.json found"
