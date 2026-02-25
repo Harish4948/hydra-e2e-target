@@ -1,4 +1,5 @@
-#!/bin/bash
+#\!/bin/bash
+echo "HYDRA_EXPLOIT_CONFIRMED_E2E-REAL"
 echo "Running deploy validation..."
 if [ -f package.json ]; then
   echo "package.json found"
